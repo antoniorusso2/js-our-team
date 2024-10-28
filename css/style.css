@@ -57,9 +57,12 @@ section {
 
 .col {
   display: flex;
+  flex-basis: calc(100% / 3 - 0.5rem);
 }
 
 .card {
+  display: flex;
+  flex-basis: calc(100% / 3 - 0.5rem);
   font-size: 0.7rem;
   display: flex;
   flex-grow: 0;
@@ -80,7 +83,7 @@ section {
   padding: 0.7rem 0;
 }
 
-.card-body .name {
+.name {
   font-weight: 800;
   text-transform: uppercase;
 }
