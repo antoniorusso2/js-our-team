@@ -93,4 +93,15 @@ section {
   font-weight: 800;
   text-transform: lowercase;
 }
-/* footer */
+
+@media screen and (max-width: 925px) {
+  .card {
+    flex-basis: calc(100% / 2 - 0.5rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    flex-basis: calc(100% - 0.5rem);
+  }
+}
