@@ -50,14 +50,16 @@ section {
 /* main */
 .row {
   display: flex;
+  /* padding: 1.5rem; */
+}
+
+.col-4 {
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.col {
-  display: flex;
-  flex-basis: calc(100% / 3 - 0.5rem);
+  /* flex-basis: calc(100% / 3 - 0.5rem); */
 }
 
 .card {
@@ -73,6 +75,7 @@ section {
 
 .card-img {
   width: 100px;
+  flex-shrink: 0;
 }
 
 .card-body {
