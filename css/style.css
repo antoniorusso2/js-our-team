@@ -1,9 +1,22 @@
-/* reset rules */
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* color custom properties */
+:root {
+  --title-color: #e53170;
+  --email-color: #4391bd;
+}
 
+/* reset rules */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
 }
 
 a {
@@ -16,8 +29,65 @@ img {
   display: block;
 }
 
+/* container centering */
+.container {
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+}
+
+/* general rules */
+section {
+  margin: 1.5rem 0;
+}
 /* header */
+.big-title {
+  text-align: center;
+  font-family: "Coiny", system-ui;
+  font-weight: 600;
+  color: var(--title-color);
+}
 
 /* main */
+.row {
+  display: flex;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.col {
+  display: flex;
+}
+
+.card {
+  font-size: 0.7rem;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: black;
+  color: #ffffff;
+}
+
+.card-img {
+  width: 100px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body > * {
+  padding: 0.7rem 0;
+}
+
+.card-body .name {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card-body .e-mail {
+  color: var(--email-color);
+  font-weight: 800;
+  text-transform: lowercase;
+}
 /* footer */
