@@ -1,0 +1,23 @@
+/* reset rules */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* header */
+
+/* main */
+
+/* footer */
